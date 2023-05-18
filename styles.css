@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Quando&display=swap");
+
+body {
+  background-image: url(public/Fondo2.jpg);
+  background-size: cover;
+  font-family: "Quando", serif;
+
+}
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  max-width: 30vh;
+}
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  color: #000000;
+  z-index: 1;
+}
+
+.lista {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 10vh;
+  font-size: 10px;
+}
+
+.lista1 {
+  position: relative;
+  list-style: none;
+  margin: 0 10px;
+  width: 70px;
+  height: 30px;
+  background: #f0f0f0;
+  border-radius: 120px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 20px rgb(255, 255, 255);
+  transition: 0.5s;
+  color: #000000;
+  text-decoration: none;
+}
+
+.lista1:hover {
+  width: 100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  
+
+}
+
+.texto-cuadro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  backdrop-filter: blur(90px);
+  width: 90%;
+  padding: 20px;
+  gap: 100px;
+  border-radius: 20px;
+
+}  
+.texto{
+  font-size: 25px;
+  padding: 1vh;
+  position: relative;
+}
+.cuadro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 50vh;
+  height: 50vh;
+ 
+}
+.cuadro img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  width: 50vh;
+  height: 50vh;
+  animation: cambio-imagen 20s infinite;
+  animation-fill-mode: forwards;
+  box-shadow: 0 0 30px 20px rgb(255, 255, 255);
+}
+.cuadro img:nth-child(1) {
+  animation-delay: 0s;
+}
+.cuadro img:nth-child(2) {
+  animation-delay: 4s;
+}
+.cuadro img:nth-child(3) {
+  animation-delay: 8s;
+}
+.cuadro img:nth-child(4) {
+  animation-delay: 12s;
+}
+.cuadro img:nth-child(5) {
+  animation-delay: 16s;
+}
+
+
+ .lema {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 12vh;
+  color: #fff;
+}
+
+
+.bautizo{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: #fff;
+  gap: 20vh;
+
+ 
+}
+.mateo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+backdrop-filter: blur(90px);
+border-radius: 20px;
+padding: 5vh;
+width: 50vh;
+height: 40vh;
+margin-top: 1vh;
+
+} 
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(90px);
+  border-radius: 20px;
+  width: 50vh;
+  height: 40vh;
+  margin-top: 1vh;
+  padding: 5vh;
+}
+
+#formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#enviar{
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#enviar:hover {
+  background-color: #F96666;
+  width: 100px;
+  border-radius: 20px;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  color: #fff;
+  height: 30vh;
+}
+
+#redes{
+  display: flex;
+  gap: 10vh;
+}
+
+.instagram{
+  background-image: url(public/instagram.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+.instagram:hover{
+  border-radius: 30px;
+  box-shadow: 0px 5px 20px rgb(255, 255, 255);
+
+}
+.youtube{
+  background-image: url(public/youtube.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+.youtube:hover{
+  border-radius: 30px;
+  box-shadow: 0px 5px 20px rgb(255, 255, 255);
+
+}
+.facebook{
+  background-image: url(public/facebook.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+.facebook:hover{
+  border-radius: 30px;
+  box-shadow: 0px 5px 20px rgb(255, 255, 255);
+
+}
+
+
+
+@keyframes cambio-imagen {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .lista{
+    flex-wrap: wrap;
+    align-items: center;
+    gap:10px
+  }
+
+  .lema{
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+  }
+
+  .lista1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .texto-cuadro{
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .bautizo{
+    flex-direction: column;
+    align-items: center;
+  }
+}
